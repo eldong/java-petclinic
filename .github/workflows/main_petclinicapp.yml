@@ -23,7 +23,8 @@ jobs:
         distribution: 'adopt'
         cache: maven
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      #run: mvn -B package --file pom.xml
+      run: mvn -Djib.to.auth.username=petclinicjava -Djib.to.auth.password=jr9XdVLy5Mg11lx=EcIECusw3kU2vfNu compile jib:build --file pom.xml
   deploy:
     runs-on: ubuntu-latest
     needs: build

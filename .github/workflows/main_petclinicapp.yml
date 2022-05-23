@@ -6,7 +6,7 @@ name: Build and deploy container app to Azure Web App - petclinicapp
 on:
   push:
     branches:
-      - main
+      - test
   workflow_dispatch:
 
 jobs:

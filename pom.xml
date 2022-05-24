@@ -590,7 +590,7 @@
                 <db.script>postgresql</db.script>
                 <jpa.database>POSTGRESQL</jpa.database>
                 <jdbc.driverClassName>org.postgresql.Driver</jdbc.driverClassName>
-                <jdbc.url>jdbc:postgresql://petclinic2-postgress.postgres.database.azure.com:5432/petclinic</jdbc.url>
+                <jdbc.url>jdbc:postgresql://petclinic2-postgress.postgres.database.azure.com:5432/petclinic?sslmode=require</jdbc.url>
                 <jdbc.username>petadmin</jdbc.username>
                 <jdbc.password>PTpass!234</jdbc.password>
             </properties>
